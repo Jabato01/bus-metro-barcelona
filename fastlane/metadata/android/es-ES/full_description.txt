@@ -1,0 +1,17 @@
+App libre y no oficial de bus y metro de Barcelona, pensada ante todo para móviles Android SIN servicios de Google (GrapheneOS, LineageOS, /e/OS…).
+
+<b>Funciones</b>
+<ul>
+<li>Favoritos con los próximos buses y metros en tiempo real</li>
+<li>Consulta de bus por parada y de metro por estación</li>
+<li>Paradas cercanas por GPS</li>
+<li>Mapa de paradas y estaciones (MapLibre + OpenFreeMap), con opción de abrir en otra app de mapas</li>
+<li>Avisos de servicio de metro y bus</li>
+<li>Planificador de rutas, con búsqueda de direcciones del ICGC y OpenStreetMap</li>
+</ul>
+
+<b>Necesita tus propias claves.</b> Esta app no incluye datos ni claves. Regístrate gratis en developer.tmb.cat, acepta sus condiciones y pon en Ajustes las claves de tu aplicación. Se guardan cifradas, solo en el teléfono. Cada persona responde del uso que haga con ellas.
+
+<b>Privacidad.</b> Sin publicidad, sin analíticas y sin servicios de Google. La app se conecta solo a TMB, ICGC, Photon y OpenFreeMap.
+
+<b>Aviso.</b> Datos de la API de TMB, usados bajo sus condiciones de reutilización. Proyecto personal sin ánimo de lucro y sin ninguna vinculación con TMB ni con ningún ente público; puede retirarse en cualquier momento ante cualquier reclamación. App vibecodeada mediante Claude Code (IA). Se ofrece sin garantía: los tiempos, avisos y rutas pueden no ser exactos.

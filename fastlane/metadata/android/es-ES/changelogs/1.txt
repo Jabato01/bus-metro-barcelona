@@ -1,0 +1,1 @@
+Primera versión: favoritos, bus, metro, paradas cercanas, mapa, avisos de servicio y planificador de rutas.

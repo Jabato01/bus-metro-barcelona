@@ -1,0 +1,17 @@
+Free and unofficial Barcelona bus and metro app, designed first of all for Android phones WITHOUT Google services (GrapheneOS, LineageOS, /e/OS…). The app's interface is in Spanish.
+
+<b>Features</b>
+<ul>
+<li>Favourites with the next buses and trains in real time</li>
+<li>Bus arrivals by stop and metro arrivals by station</li>
+<li>Nearby stops by GPS</li>
+<li>Map of stops and stations (MapLibre + OpenFreeMap), with an option to open another map app</li>
+<li>Metro and bus service alerts</li>
+<li>Journey planner, with address search from ICGC and OpenStreetMap</li>
+</ul>
+
+<b>You need your own keys.</b> This app includes no data and no keys. Register for free at developer.tmb.cat, accept its terms and enter your application's keys in Settings. They are stored encrypted, only on the phone. Each person is responsible for how they use them.
+
+<b>Privacy.</b> No ads, no analytics and no Google services. The app connects only to TMB, ICGC, Photon and OpenFreeMap.
+
+<b>Notice.</b> Data from TMB's API, used under its reuse terms. Personal non-profit project with no connection to TMB or any public body; it may be withdrawn at any time upon any claim. Vibe-coded with Claude Code (AI). Provided without warranty: times, alerts and routes may be inaccurate.
