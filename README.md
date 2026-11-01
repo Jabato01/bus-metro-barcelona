@@ -14,6 +14,10 @@ pero no los usa para nada.
 > La app ha sido *vibecodeada* mediante [Claude Code](https://claude.com/claude-code). Se ofrece
 > **sin garantía**: lee el [aviso legal](AVISO-LEGAL.md).
 
+## Descarga
+
+APK firmado en [Releases](https://github.com/Jabato01/bus-metro-barcelona/releases/latest). Requiere Android 8 o superior y un móvil ARM. F-Droid: pendiente de enviar.
+
 ## Funciones
 
 - **Favoritos:** próximos buses y metros en tiempo real; ⚠ si un aviso les afecta.
