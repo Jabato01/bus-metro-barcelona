@@ -502,6 +502,7 @@ fun SettingsScreen(model: AppModel) {
 
     Scaffold(topBar = { Bar("Ajustes", onBack = { model.back() }) }) { padding ->
         Column(Modifier.padding(padding).padding(16.dp).fillMaxSize().verticalScroll(rememberScrollState()), verticalArrangement = Arrangement.spacedBy(12.dp)) {
+            if (model.credentialsUnreadable) Hint("No se han podido leer tus claves guardadas: vuelve a ponerlas.", error = true)
             Text(
                 "Esta app no incluye datos ni claves. Regístrate en developer.tmb.cat con tu propia cuenta, acepta sus condiciones y pon aquí las claves de tu aplicación. Se guardan cifradas, solo en este teléfono.",
                 style = MaterialTheme.typography.bodySmall, color = MaterialTheme.colorScheme.onSurfaceVariant,

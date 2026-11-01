@@ -55,6 +55,8 @@ class AppModel(application: Application) : AndroidViewModel(application) {
 
     var credentials by mutableStateOf(store.credentials)
         private set
+    var credentialsUnreadable by mutableStateOf(store.credentialsUnreadable)
+        private set
     var geocoder by mutableStateOf(store.geocoder)
         private set
 
@@ -63,6 +65,7 @@ class AppModel(application: Application) : AndroidViewModel(application) {
         store.credentials = creds
         store.geocoder = provider
         credentials = creds
+        credentialsUnreadable = false
         geocoder = provider
         if (changed) loadAlerts()
     }

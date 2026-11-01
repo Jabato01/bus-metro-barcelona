@@ -142,7 +142,9 @@ fun FavoritesScreen(model: AppModel) {
             LazyColumn(Modifier.fillMaxSize()) {
                 if (model.favorites.isEmpty()) {
                     item {
-                        if (model.credentials.isComplete) {
+                        if (model.credentialsUnreadable) {
+                            Empty("No se han podido leer tus claves de TMB", "Vuelve a ponerlas en ⋮ → Ajustes.", error = true)
+                        } else if (model.credentials.isComplete) {
                             Empty("Sin favoritos", "Abre el menú ⋮ y elige «Gestión de favoritos», o consulta una parada y añádela.")
                         } else {
                             Empty("Faltan las credenciales de TMB", "Abre el menú ⋮ y elige «Ajustes».")
@@ -153,7 +155,10 @@ fun FavoritesScreen(model: AppModel) {
                     FavoriteRow(f, states[f.key], model)
                     HorizontalDivider()
                 }
-                if (model.favorites.isNotEmpty()) item { DataSource(updated) }
+                if (model.favorites.isNotEmpty()) {
+                    if (model.credentialsUnreadable) item { Hint("No se han podido leer tus claves de TMB: vuelve a ponerlas en ⋮ → Ajustes.", error = true) }
+                    item { DataSource(updated) }
+                }
             }
         }
     }

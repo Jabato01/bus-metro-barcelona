@@ -32,11 +32,16 @@ data class MetroFavorite(
 class Store(context: Context) {
     private val prefs = context.getSharedPreferences("settings", Context.MODE_PRIVATE)
 
+    /** The keys are stored but can't be decrypted, e.g. after the Keystore key was lost. */
+    var credentialsUnreadable = false
+        private set
+
     var credentials: Credentials
         get() = Credentials(secret("appId"), secret("appKey"))
         set(value) {
             putSecret("appId", value.appId)
             putSecret("appKey", value.appKey)
+            credentialsUnreadable = false
         }
 
     var geocoder: String
@@ -103,6 +108,7 @@ class Store(context: Context) {
         cipher.init(Cipher.DECRYPT_MODE, key(), GCMParameterSpec(128, data, 0, IV_SIZE))
         String(cipher.doFinal(data, IV_SIZE, data.size - IV_SIZE))
     } catch (e: Exception) {
+        credentialsUnreadable = true
         ""
     }
 
