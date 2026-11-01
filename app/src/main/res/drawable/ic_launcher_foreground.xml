@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Original design: bus front and a clock. Not TMB's logo or colours. -->
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="108dp" android:height="108dp"
+    android:viewportWidth="256" android:viewportHeight="256">
+    <group android:scaleX="0.68" android:scaleY="0.68" android:translateX="41" android:translateY="41">
+        <path android:fillColor="#073A52" android:pathData="M63,206h18v20a5,5 0 0,1 -5,5h-8a5,5 0 0,1 -5,-5z" />
+        <path android:fillColor="#073A52" android:pathData="M123,206h18v20a5,5 0 0,1 -5,5h-8a5,5 0 0,1 -5,-5z" />
+        <path android:fillColor="#FFFFFF" android:pathData="M66,70h72a22,22 0 0,1 22,22v102a22,22 0 0,1 -22,22h-72a22,22 0 0,1 -22,-22v-102a22,22 0 0,1 22,-22z" />
+        <path android:fillColor="#0A4D6E" android:pathData="M68,76h68a6,6 0 0,1 0,12h-68a6,6 0 0,1 0,-12z" />
+        <path android:fillColor="#9CD8E3" android:pathData="M64,98h76a10,10 0 0,1 10,10v42a10,10 0 0,1 -10,10h-76a10,10 0 0,1 -10,-10v-42a10,10 0 0,1 10,-10z" />
+        <path android:fillColor="#FFC531" android:pathData="M57,186a9,9 0 1,0 18,0a9,9 0 1,0 -18,0z" />
+        <path android:fillColor="#FFC531" android:pathData="M129,186a9,9 0 1,0 18,0a9,9 0 1,0 -18,0z" />
+        <path android:fillColor="#0A4D6E" android:pathData="M92,180h20a6,6 0 0,1 0,12h-20a6,6 0 0,1 0,-12z" />
+        <path android:fillColor="#FFFFFF" android:pathData="M124,92a54,54 0 1,0 108,0a54,54 0 1,0 -108,0z" />
+        <path android:fillColor="#FFC531" android:pathData="M128,92a50,50 0 1,0 100,0a50,50 0 1,0 -100,0z" />
+        <path android:strokeColor="#0A4D6E" android:strokeWidth="9" android:strokeLineCap="round" android:pathData="M178,92V62M178,92L200,104" />
+    </group>
+</vector>

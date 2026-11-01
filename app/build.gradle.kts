@@ -31,6 +31,8 @@ android {
 dependencies {
     implementation(platform("androidx.compose:compose-bom:2026.09.00"))
     implementation("androidx.compose.material3:material3")
+    implementation("androidx.compose.material:material-icons-core")
+    implementation("androidx.lifecycle:lifecycle-viewmodel-compose:2.10.0")
     implementation("androidx.activity:activity-compose:1.11.0")
     implementation("org.maplibre.gl:android-sdk:13.7.1")
 }
